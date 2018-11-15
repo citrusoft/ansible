@@ -14,15 +14,15 @@ The setup includes three(3) virtual machines on your host OS.
 
 ## How to Setup VMs
 Once you install Virtualbox, Vagrant etc, open a terminal with bash shell (ConEMU, Gitbash, iterm)
-# create a directory to isolate your work.
-# copy the Vagrantfile provided to your directory.
-# start a terminal/shell and bring up the control node
+1. create a directory to isolate your work.
+2. copy the Vagrantfile provided to your directory.
+3. start a terminal/shell and bring up the control node
 >vagrant up control
 >vagrant ssh control
-# start a terminal/shell and bring up the database node
+4. start a terminal/shell and bring up the database node
 >vagrant up db
 >vagrant ssh db
-# start a terminal/shell and bring up the web server node
+5. start a terminal/shell and bring up the web server node
 >vagrant up www
 >vagrant ssh www
 
