@@ -17,14 +17,14 @@ Once you install Virtualbox, Vagrant etc, open a terminal with bash shell (ConEM
 1. create a directory to isolate your work.
 2. copy the Vagrantfile provided to your directory.
 3. start a terminal/shell and bring up the control node
-'code' vagrant up control
-'code' vagrant ssh control
+> vagrant up control  
+> vagrant ssh control
 4. start a terminal/shell and bring up the database node
->vagrant up db
->vagrant ssh db
+> vagrant up db  
+> vagrant ssh db
 5. start a terminal/shell and bring up the web server node
->vagrant up www
->vagrant ssh www
+> vagrant up www  
+> vagrant ssh www
 
 Congratulations!  You should have 3 nodes setup e.g. 1 control, 1 www , 1 db. 
 
@@ -32,9 +32,9 @@ Congratulations!  You should have 3 nodes setup e.g. 1 control, 1 www , 1 db.
 Once logged in to the control node, install ansible using [official installation instructions here](http://docs.ansible.com/ansible/intro_installation.html)
 
 *Please note Ansible 1.9 was the latest version available at the time of writing of this book. If you have installed a later version, specially 2.0 onwards, there are changes which may be incompatible with the examples provided in the text. Please make changes accordingly. *
-> sudo apt-get update
-> sudo apt-add-repository ppa:ansible/ansible
-> sudo apt-get install python-pip python-dev
+> sudo apt-get update  
+> sudo apt-add-repository ppa:ansible/ansible  
+> sudo apt-get install python-pip python-dev  
 > sudo pip install ansible==1.9.3
 
 ## Setup SSH on the control node
@@ -43,8 +43,8 @@ Use the commands within ssh-setup.bash
 
 ## Install git and clone this repo on the control node
 Log into control node as vagrant...
-apt-get install git
-git clone <url_to_this_repo>
+> apt-get install git  
+> git clone <url_to_this_repo>
 
 ## Launch playbooks to configure nodes...
 > ansible-playbook -i customhosts site.yml
