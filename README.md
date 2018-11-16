@@ -17,8 +17,8 @@ Once you install Virtualbox, Vagrant etc, open a terminal with bash shell (ConEM
 1. create a directory to isolate your work.
 2. copy the Vagrantfile provided to your directory.
 3. start a terminal/shell and bring up the control node
->vagrant up control
->vagrant ssh control
+'code' vagrant up control
+'code' vagrant ssh control
 4. start a terminal/shell and bring up the database node
 >vagrant up db
 >vagrant ssh db
